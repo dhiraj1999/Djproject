@@ -1,0 +1,207 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DashBoard.master.cs" Inherits="DashBoard" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+         <title></title>
+ <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css" href="dashboard.css"/>
+  <link href="CSS/staff.css"  type="text/css"  rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="~/Scripts/bootstrap.js"></script>
+  <script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+  <script type="text/javascript" src="~/Scripts/jquery-1.9.1.js"></script>
+<asp:ContentPlaceHolder id="head" runat="server">
+<style type="text/css">
+    .news
+    {
+        margin-top:10px;
+    }    
+    header .margin-grid 
+    {
+    width: 100%;
+    max-width: 1100px;
+     }
+    .div
+    {  
+       display:block;
+    }
+</style>
+ </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">             
+       <div class="container-fluid"><br />
+           <div class="notice">
+               <img src="Image/E-Notice%20.png" height="150" width="700"/>     
+           </div><br />
+      </div>
+
+      <div class="navbar navbar-inverse navbar-static-top " role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+       <!-- <span class="sr-only">Toggle navigation</span> -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="Home.aspx">Home</a></li>
+        <li><a href="CollegeProfile.aspx">College Profile</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Course<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="Faculty_arts.aspx" >Arts</a></li>
+            <li><a href="Faculty_commerce.aspx">Commerce</a></li>
+            <li><a href="Faculty_science.aspx">Science</a></li>
+          </ul>
+        </li>    
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Subjects<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="BscSyllabus.aspx" >B.SC. Syllabus</a></li>
+            <li><a href="BcomSyllabus.aspx">B.COM. Syllabus</a></li>
+            <li><a href="BmsSyllabus.aspx">B.M.S. Syllabus</a></li>
+            <li><a href="McaSyllabus.aspx"> M.C.A. Syllabus</a></li>
+          </ul>
+        </li>    
+           <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Staff<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="Teachingstaff.aspx" >Teaching Staff</a></li>
+            <li><a href="Non-teachingstaff.aspx">Junior College</a></li>
+            <li><a href="Administrative.aspx">Administrative Staff</a></li>
+          </ul>
+        </li>
+            <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Exams<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Fees</a></li>
+            <li><a href="#">Result</a></li>
+            <li><a href="#">Time Table</a></li>
+          </ul>
+        </li>
+      <li><a href="Feedback.aspx">FeedBack</a></li>
+      <li><a href="Home.aspx">About Us</a></li>
+      </ul>
+       <ul class="nav navbar-nav navbar-right">
+         <li><a href="Register.aspx"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>&nbsp;&nbsp;&nbsp;
+         <li><a href="Login.aspx"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+
+        <!-- navbar -->
+       
+
+ <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-4">
+           <div>
+               <h1 class="jumbotron text-center news" style="background-color:#4a47a3; color: black;">News & Events</h1>
+           </div>
+            <div>
+            <table class="table table-bordered" style="border-color:#004a7c">
+             <tbody>
+             <tr>
+               <td>
+               <marquee scrolldelay="200"  behaviour="scroll" direction="up" height="365px" onmouseover="this.stop()" onmouseout="this.start();">
+               <asp:HyperLink ID="HyperLink1" runat="server" style="color:red" NavigateUrl="https://drive.google.com/file/d/12IDdo6OD9ZCE7aC1bKgqMzaZMtrNl5he/view?usp=drivesdk" rel="noopener noreferrer" target="_blank">TYBSC-IT-Syllabus</asp:HyperLink><br /><br />
+               <asp:HyperLink ID="HyperLink2" runat="server" style="color:red" NavigateUrl="https://drive.google.com/file/d/11EBtOIjm-gVOf_ir0YcEkTQXOdljTxBl/view?usp=drivesdk" rel="noopener noreferrer" target="_blank">TYBSC-IT-Sem6 EN APR19</asp:HyperLink><br /><br />
+               <asp:HyperLink ID="HyperLink3" runat="server" style="color:red" NavigateUrl="https://drive.google.com/file/d/11Kk-QJHVpPXC7Kv4rNemezNrVp5YUcJb/view?usp=drivesdk" rel="noopener noreferrer" target="_blank">TYBSC-IT-Sem6 SIC APR19</asp:HyperLink><br /><br />
+               <asp:HyperLink ID="HyperLink4" runat="server" style="color:red" NavigateUrl="https://drive.google.com/file/d/11L2xColByNoNWZSPD8gFZ4zWbe4fXlic/view?usp=drivesdk" rel="noopener noreferrer" target="_blank">TYBSC-IT-Sem6 SIC NOV19</asp:HyperLink><br /><br />
+               <asp:HyperLink ID="HyperLink5" runat="server" style="color:red" NavigateUrl="https://drive.google.com/file/d/11P9NUaii2e1_tSXjcm3yK17XFCCgA27B/view?usp=drivesdk" rel="noopener noreferrer" target="_blank">TYBSC-IT-SEM6 SQA APR19</asp:HyperLink><br /><br />
+               <asp:HyperLink ID="HyperLink6" runat="server" style="color:red" NavigateUrl="https://drive.google.com/file/d/11PLe9vIVoSuVSka46haVOkBKhP6azh5a/view?usp=drivesdk" rel="noopener noreferrer" target="_blank">TYBSC-IT-SEM6 SQA NOV19</asp:HyperLink><br /><br />
+               <asp:HyperLink ID="HyperLink7" runat="server" style="color:red" NavigateUrl="https://drive.google.com/file/d/11AFS7Tp35c6wWD8C8wka81f1YiiepK9r/view?usp=drivesdk" rel="noopener noreferrer" target="_blank">TYBSC-IT-SEM6 BI NOV19</asp:HyperLink><br /><br />
+               <asp:HyperLink ID="HyperLink8" runat="server" style="color:red" NavigateUrl="https://drive.google.com/file/d/115n_XYN6GAkTlYmooZBxuTNoWCS3IVMH/view?usp=drivesdk" rel="noopener noreferrer" target="_blank">TYBSC-IT-SEM6 BI APR19</asp:HyperLink><br /><br />
+               <asp:HyperLink ID="HyperLink9" runat="server" style="color:red"  NavigateUrl="https://drive.google.com/file/d/1151XaNTro65Mk5SIHgSeQt_XniXcXHVa/view?usp=drivesdk" rel="noopener noreferrer" target="_blank">TYBSC-IT-SEM5 SPM NOV18</asp:HyperLink><br /><br />
+               <asp:HyperLink ID="HyperLink10" runat="server" style="color:red" NavigateUrl="https://drive.google.com/file/d/10eNnfrG6qvRxSIL30shEp77XSmkUe3i8/view?usp=drivesdk" rel="noopener noreferrer" target="_blank">TYBSC-IT-SEM5 LSA NOV18</asp:HyperLink><br /><br />
+               <asp:HyperLink ID="HyperLink11" runat="server" style="color:red" NavigateUrl="https://drive.google.com/file/d/10bhV9OmTzFJEd_Q5VgGHQ1QUY5r9sz9l/view?usp=drivesdk" rel="noopener noreferrer" target="_blank">TYBSC-IT-SEM5 IOT NOV18</asp:HyperLink><br /><br />
+               <asp:HyperLink ID="HyperLink12" runat="server" style="color:red" NavigateUrl="https://drive.google.com/file/d/10Yzd-gjnh4Pol9bVzmngmiGazjRmdsqC/view?usp=drivesdk" rel="noopener noreferrer" target="_blank" >TYBSC-IT-SEM5 EJ NOV18</asp:HyperLink><br /><br />
+               <asp:HyperLink ID="HyperLink13" runat="server" style="color:red" NavigateUrl="https://drive.google.com/file/d/10OrEejivZU9FB_ukfZ4Bk136SnmgdvI0/view?usp=drivesdk" rel="noopener noreferrer" target="_blank">TYBSC-IT-SEM5 AWP NOV18</asp:HyperLink><br /><br />
+              </marquee>
+              </td>
+              </tr>            
+              </tbody>
+             </table>
+          </div>
+          <div>
+              <h1 class="jumbotron text-center" style="background-color:#4a47a3; color: #FFFFFF;">Important Links</h1> 
+          </div>
+          <div>
+          <table class="table table-hover table-bordered">
+             <tr>
+                <td><asp:HyperLink ID="HyperLink14" runat="server" style="color:red" NavigateUrl="http://www.maharashtra.gov.in" target="_blank">Maharashtra Government</asp:HyperLink></td>
+             </tr>   
+             <tr>
+                <td> <asp:HyperLink ID="HyperLink15" runat="server" style="color:red" NavigateUrl="http://www.mu.ac.in" target="_blank">Mumbai University</asp:HyperLink></td>
+             </tr>
+          </table>
+          </div>
+	   	  </div>
+          <div class="col-md-8">
+         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+         </asp:ContentPlaceHolder>
+          </div>
+      </div>
+    </div>
+    
+ <footer>
+    <div class="footer" id="footer"  style="background-color:#004a7c ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">   
+                    <h2 class="text-success" style="color:white"> E-Notice Board process</h2>
+                </div>
+                <div class="col-md-3">
+                    <h3 style="color:white"> Contact </h3><br />
+                   <p style="color:yellow">Nallasopara (East), Dist. Palghar-401209.<br /> Maharashtra, India</p>
+                    <p style="color:yellow"><i class="fa fa-phone"></i>&nbsp;:&nbsp;8007094060
+                        <br/><br />
+                       <a href="mailto:dhiraj7219@gmail.com" style="color:yellow">
+                         <i class="fa fa-envelope">&nbsp;:&nbsp;dhiraj7219@gmail.com</i>
+                       </a>
+                    </p>
+                    <br />
+                </div>
+                <div class="col-md-3">
+                    <h3 style="color:white"> Quick Links </h3><br />
+                    <p><asp:HyperLink ID="home" runat="server" style="color:yellow" NavigateUrl="~/Home.aspx">Home</asp:HyperLink><br /></p>
+                    <p><asp:HyperLink ID="profile" runat="server" style="color:yellow" NavigateUrl="~/CollegeProfile.aspx">College Profile</asp:HyperLink><br /></p>
+                    <p><asp:HyperLink ID="staff" runat="server" NavigateUrl="~/FeedBack.aspx" style="color:yellow">Feedback</asp:HyperLink><br /></p>
+                    <p><asp:HyperLink ID="contact" runat="server" NavigateUrl="#" style="color:yellow">Contact Us</asp:HyperLink><br /></p>
+                </div>  
+                <div class="col-md-3">
+                     <h3 style="color:white"> Contact On Social Media </h3>
+                    <p><a href="#">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Image/facebook.PNG" class="img-circle" Height="60" Width="55" /></a>&nbsp;
+                      <a href="#">
+                         <asp:Image ID="Image2" runat="server" ImageUrl="~/Image/twitter.PNG" class="img-circle"  Height="60" Width="55"/></a>&nbsp;
+                      <a href="#">
+                         <asp:Image ID="Image3" runat="server" ImageUrl="~/Image/google.PNG" class="img-circle"  Height="60" Width="55"/></a>&nbsp;
+                      <a href="#">
+                         <asp:Image ID="Image4" runat="server" ImageUrl="~/Image/linkdin.PNG" class="img-circle"  Height="60" Width="55"/></a>
+                        </p>
+                </div>        
+        </div>
+    </div>
+                        
+    <div class="footer-bottom">
+        <div class="container-fluid" style="background-color:#8dc6ff">
+            <br />
+            <h4 class="text-center " style="color:red"> Copyright © E-Notice Board 2020 </h4>
+            <h4 class="text-center " style="color:red">Designed and Developed by Dheeraj Vishwakarma</h4>
+        </div>
+    </div> 
+ </div> 
+</footer>
+    </form>
+</body>
+</html>
