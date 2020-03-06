@@ -4,10 +4,9 @@
     <style type="text/css">
        .sign
      {
-        width:100%;
         color:white;
-        padding-left:100px;
         margin-top:20px;
+        padding-left:50px;
      }
      signup:hover
      {
@@ -39,7 +38,7 @@
 
 <div class="container-fluid">
    
-    <div class="sign" style=" background-color:#192965" ><br /><br /><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>SIGN UP</u><br />&nbsp; <br />
+    <div class="sign" style=" background-color:#192965; height:850px; width:auto;" ><br /><br /><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>SIGN UP</u><br />&nbsp; <br />
 
     <div class="input">
         <asp:Label ID="lbl7" runat="server" Text="USERID"></asp:Label>
@@ -84,6 +83,8 @@
 
     <div class="signup" style="text-align:center;">
     <asp:Button ID="btnsignup" runat="server" Text="SIGN IN" class="form-control" style="background-color:#F39C12" OnClick="btn1_Click" /><br />
+        <br />
+        <asp:Label ID="Label1" runat="server" ></asp:Label>
     </div>
 
     </div>

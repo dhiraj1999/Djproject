@@ -34,7 +34,7 @@
             </thead>
             <tbody>
                 <tr>                   
-                    <td>First Year Semester 1 & 2 (CBCGS)</td>    
+                    <td>First Year Semester 1 & 2 (CBCGS)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>    
                     <td><a href="https://drive.google.com/file/d/19yEzHlBnktXbMNvak5LO_AKcQvLPV4l2/view?usp=drivesdk" >Download</a></td>
                 </tr>
                 <tr>

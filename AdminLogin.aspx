@@ -4,10 +4,9 @@
     <style type="text/css">
        .sign
      {
-        margin-left:100px;
-        margin-right:200px; 
+        
         color:white;
-        padding-left:100px;
+        padding-left:50px;
         margin-top:20px;
      }
      signin:hover
@@ -34,16 +33,18 @@
          padding:0px 0px 50px 0px;
          width:317px;
      }
+      
  </style>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <div class="sign" style=" background-color:#192965" ><br /><br /><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>ADMIN SIGN IN</u><br />&nbsp; <br />
+
+    <div class="sign" style="background-color: #192965; height: 850px;"><br /><br /><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>ADMIN SIGN IN</u><br />&nbsp; <br />
 
     <div class="input">
-        <asp:Label ID="lbl1" runat="server" Text="USERNAME"></asp:Label>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" ControlToValidate="txtusername" ForeColor="red"></asp:RequiredFieldValidator>
-        <asp:TextBox ID="txtusername" runat="server" class="form-control" BorderColor="black"></asp:TextBox>
+        <asp:Label ID="lbl1" runat="server" Text="USERID"></asp:Label>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" ControlToValidate="txtuserid" ForeColor="red"></asp:RequiredFieldValidator>
+        <asp:TextBox ID="txtuserid" runat="server" class="form-control" BorderColor="black"></asp:TextBox>
         <br />
         <asp:Label ID="lbl2" runat="server" Text="PASSWORD"></asp:Label>
          <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*" ControlToValidate="txtpass" ForeColor="red" ></asp:RequiredFieldValidator>
@@ -56,8 +57,11 @@
     </div>
 
     <div class="signin" style="text-align:center;">
-    <asp:Button ID="btnsignin" runat="server" Text="SIGN IN" class="form-control" style="background-color:#F39C12" /><br />
+    <asp:Button ID="btnsignin" runat="server" Text="SIGN IN" class="form-control" style="background-color:#F39C12" OnClick="btnsignin_Click" /><br />  
+
+     <asp:Button ID="btnback" runat="server" Text="BACK" class="form-control" style="background-color:#F39C12" OnClick="btnback_Click"  /><br />
     </div>
-    </div>
+        <asp:Label ID="lbl3" runat="server"></asp:Label>
+</div>
 </asp:Content>
 
